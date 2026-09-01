@@ -25,5 +25,5 @@ export const MANIFESTO_CONFIG = {
   modalTitle: 'Manifeste de Force Commune',
 
   // Sous-titre
-  modalSubtitle: '« D\'abord ceux qui font » — Document de référence officiel',
+  modalSubtitle: '« La Wallonie qui ose » — Document de référence officiel',
 };

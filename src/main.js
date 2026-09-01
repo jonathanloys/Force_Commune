@@ -154,9 +154,9 @@ function renderAccueil() {
           </div>
 
           <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] font-display">
-            D’abord ceux <br class="hidden sm:inline" />
+            La Wallonie <br class="hidden sm:inline" />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-orange-300">
-              qui font.
+              qui ose.
             </span>
           </h1>
 
@@ -1213,7 +1213,7 @@ function bindDynamicEvents() {
   // 8. Forms submissions with feedback
   document.getElementById('membership-full-form')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    showToast('Félicitations ! Votre adhésion citoyenne à Force Commune a bien été enregistrée. Bienvenue parmi ceux qui font !', 'success');
+    showToast('Félicitations ! Votre adhésion citoyenne à Force Commune a bien été enregistrée. Bienvenue dans La Wallonie qui ose !', 'success');
     e.target.reset();
   });
 
