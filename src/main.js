@@ -182,31 +182,13 @@ function renderAccueil() {
             </button>
           </div>
 
-          <!-- Key Metrics Badges -->
-          <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-navy-800/80">
-            <div class="space-y-0.5">
-              <div class="text-2xl sm:text-3xl font-extrabold text-white font-display">+18 500</div>
-              <div class="text-xs text-slate-400 font-medium">Citoyens adhérents</div>
-            </div>
-            <div class="space-y-0.5">
-              <div class="text-2xl sm:text-3xl font-extrabold text-orange-400 font-display">100%</div>
-              <div class="text-xs text-slate-400 font-medium">Autofinancement libre</div>
-            </div>
-            <div class="space-y-0.5">
-              <div class="text-2xl sm:text-3xl font-extrabold text-white font-display">14</div>
-              <div class="text-xs text-slate-400 font-medium">Fédérations locales</div>
-            </div>
-            <div class="space-y-0.5">
-              <div class="text-2xl sm:text-3xl font-extrabold text-orange-400 font-display">+350 €</div>
-              <div class="text-xs text-slate-400 font-medium">Net/mois visé par salarié</div>
-            </div>
-          </div>
+
 
         </div>
       </div>
     </section>
 
-    <!-- Section: Notre Boussole (5 Piliers) -->
+    <!-- Section: Notre Boussole (6 Piliers) -->
     <section id="boussole" class="py-20 lg:py-28 bg-slate-50 relative">
       <div class="section-container">
         
@@ -216,17 +198,17 @@ function renderAccueil() {
             <span>Notre Ligne Fondatrice</span>
           </div>
           <h2 class="text-3xl sm:text-5xl font-extrabold text-navy-950 font-display tracking-tight">
-            Notre Boussole : 5 Piliers d'Action
+            Notre Boussole : 6 Piliers d'Action
           </h2>
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Face au découragement général et à la lourdeur des appareils politiques traditionnels, Force Commune s'organise autour de 5 principes cardinaux, concrets et inaltérables.
+            Face au découragement général et à la lourdeur des appareils politiques traditionnels, Force Commune s'organise autour de 6 principes cardinaux, concrets et inaltérables.
           </p>
         </div>
 
-        <!-- 5 Pillars Grid -->
+        <!-- 6 Pillars Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          ${pillarsData.map((pillar, idx) => `
-            <div class="pillar-card group ${idx === 4 ? 'md:col-span-2 lg:col-span-1' : ''}">
+          ${pillarsData.map((pillar) => `
+            <div class="pillar-card group">
               <div class="pillar-img-wrap">
                 <img src="${pillar.image}" alt="${pillar.title}" class="pillar-img" loading="lazy">
                 <div class="pillar-number">${pillar.number}</div>
@@ -247,15 +229,7 @@ function renderAccueil() {
                   </p>
                 </div>
 
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <button 
-                    class="btn btn-navy text-xs py-2 px-4 w-full justify-between group-hover:border-orange-500" 
-                    data-open-pillar="${pillar.id}"
-                  >
-                    <span>Consulter la feuille de route</span>
-                    <i data-lucide="chevron-right" class="w-4 h-4 text-orange-400 group-hover:translate-x-1 transition-transform"></i>
-                  </button>
-                </div>
+
               </div>
             </div>
           `).join('')}
@@ -430,141 +404,17 @@ function renderAccueil() {
       </div>
     </section>
 
-    <!-- Section: Témoignages Citoyens -->
-    <section class="py-20 bg-white border-t border-slate-200">
-      <div class="section-container">
-        
-        <div class="max-w-2xl mb-12 space-y-3">
-          <span class="badge badge-navy">La Voix du Réel</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-950 font-display tracking-tight">
-            Ils font la Belgique au quotidien
-          </h2>
-          <p class="text-slate-600 text-sm sm:text-base">
-            Découvrez pourquoi artisans, infirmières, enseignants et entrepreneurs rejoignent massivement Force Commune partout en Belgique.
-          </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          ${testimonialsData.slice(0, 3).map(test => `
-            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between space-y-4 hover:border-orange-300 transition-colors">
-              <div class="space-y-3">
-                <div class="flex items-center justify-between">
-                  <span class="badge badge-orange text-[10px]">${test.tag}</span>
-                  <span class="text-xs text-slate-400 font-medium">${test.location}</span>
-                </div>
-                <p class="text-slate-700 text-sm leading-relaxed italic">
-                  « ${test.quote} »
-                </p>
-              </div>
-
-              <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-navy-900 text-orange-400 font-bold flex items-center justify-center font-display text-sm">
-                  ${test.name.charAt(0)}
-                </div>
-                <div>
-                  <h4 class="font-bold text-navy-950 text-sm">${test.name}</h4>
-                  <p class="text-xs text-slate-500">${test.profession} (${test.age})</p>
-                </div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Section: Actualités & Agenda Régional -->
-    <section class="py-20 bg-slate-50 border-t border-slate-200">
-      <div class="section-container">
-        
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-          <div>
-            <span class="badge badge-orange mb-2">Sur le Terrain</span>
-            <h2 class="text-3xl font-extrabold text-navy-950 font-display">
-              Actualités & Tournée Citoyenne
-            </h2>
-          </div>
-          <a href="#actualites" class="btn btn-outline text-sm" data-route="actualites">
-            <span>Toutes les dates & articles</span>
-            <i data-lucide="arrow-right" class="w-4 h-4 text-orange-500"></i>
-          </a>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          <!-- Latest 2 News Cards -->
-          <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            ${newsData.slice(0, 2).map(item => `
-              <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-                <div class="h-44 bg-navy-950 relative">
-                  <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover opacity-85">
-                  <span class="absolute top-3 left-3 badge badge-dark">${item.category}</span>
-                </div>
-                <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
-                  <div class="space-y-2">
-                    <span class="text-xs text-slate-400 font-medium">${item.date}</span>
-                    <h3 class="font-bold text-base text-navy-950 line-clamp-2 hover:text-orange-600 transition-colors">
-                      ${item.title}
-                    </h3>
-                    <p class="text-xs text-slate-600 line-clamp-3">
-                      ${item.summary}
-                    </p>
-                  </div>
-                  <a href="#actualites" class="text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1 pt-2" data-route="actualites">
-                    <span>Lire l'article complet</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                  </a>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-
-          <!-- Upcoming Meetings Tour Agenda Box -->
-          <div class="bg-navy-950 text-white rounded-2xl p-6 border border-navy-800 flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between border-b border-navy-800 pb-3">
-                <div class="flex items-center gap-2">
-                  <i data-lucide="calendar" class="w-5 h-5 text-orange-500"></i>
-                  <h3 class="font-bold text-base font-display">Prochaines Réunions</h3>
-                </div>
-                <span class="badge badge-orange text-[10px]">Entrée Libre</span>
-              </div>
-
-              <div class="space-y-3.5">
-                ${regionalTourEvents.slice(0, 3).map(ev => `
-                  <div class="p-3 rounded-xl bg-navy-900 border border-navy-800 flex items-start justify-between gap-3">
-                    <div>
-                      <div class="font-bold text-sm text-white">${ev.city}</div>
-                      <div class="text-xs text-slate-400">${ev.venue} • ${ev.date} (${ev.time})</div>
-                      <div class="text-[11px] text-orange-400 font-medium mt-0.5">${ev.topic}</div>
-                    </div>
-                    <button class="btn-rsvp btn btn-primary text-[11px] py-1 px-2.5 rounded-md" data-city="${ev.city}">
-                      S'inscrire
-                    </button>
-                  </div>
-                `).join('')}
-              </div>
-            </div>
-
-            <a href="#actualites" class="btn btn-outline text-xs text-white border-navy-700 hover:text-orange-400 w-full justify-center mt-4" data-route="actualites">
-              <span>Voir les 7 dates en Belgique</span>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
 
     <!-- Final Call to Action -->
-    <section class="py-20 lg:py-24 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950 text-white relative overflow-hidden">
+    <section class="py-20 lg:py-24 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
       <div class="section-container relative z-10">
         <div class="max-w-3xl mx-auto text-center space-y-6">
           <span class="badge badge-orange">Passez à l'Action</span>
-          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white tracking-tight">
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-navy-950 tracking-tight">
             La Belgique ne changera pas toute seule.
           </h2>
-          <p class="text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p class="text-base sm:text-lg text-slate-700 font-medium leading-relaxed">
             Rejoignez des milliers de citoyens qui refusent la fatalité. Adhérez, devenez bénévole ou soutenez financièrement un mouvement 100% libre et indépendant.
           </p>
 
@@ -573,7 +423,7 @@ function renderAccueil() {
               <i data-lucide="check-circle" class="w-5 h-5"></i>
               <span>Adhérer à Force Commune</span>
             </a>
-            <button class="btn btn-outline text-white border-navy-700 bg-navy-900/80 hover:text-orange-400 text-base py-3.5 px-7" data-action="open-donation">
+            <button class="btn btn-outline text-navy-950 border-slate-300 bg-white hover:bg-slate-100 hover:text-orange-600 text-base py-3.5 px-7" data-action="open-donation">
               <i data-lucide="heart" class="w-5 h-5 text-orange-500"></i>
               <span>Faire un don défiscalisé (45%)</span>
             </button>
@@ -601,32 +451,29 @@ function renderLeMouvement() {
       </div>
     </div>
 
-    <!-- Charte Éthique & 10 Principes -->
+    <!-- Charte Éthique & Principes -->
     <section class="py-16 bg-white border-b border-slate-200">
       <div class="section-container">
         
         <div class="max-w-3xl mb-12 space-y-3">
           <span class="badge badge-navy">Exemplarité & Transparence</span>
           <h2 class="text-3xl font-bold text-navy-950 font-display">
-            La Charte des 10 Engagements Inviolables
+            La Charte des Engagements Inviolables
           </h2>
           <p class="text-slate-600 text-sm sm:text-base">
-            Tout candidat et représentant de Force Commune s'engage par serment écrit sur ces 10 règles strictes.
+            Tout candidat et représentant de Force Commune s'engage par serment écrit sur ces 7 règles strictes.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           ${[
-            { num: "01", title: "Zéro Cumul des Mandats", desc: "Un élu, un seul mandat. Fin du cumul des fonctions de bourgmestre, député et administrateur d'intercommunale." },
-            { num: "02", title: "Expérience Professionnelle Réelle", desc: "Tout candidat aux élections doit justifier d'au moins 5 années d'activité professionnelle rémunérée hors des partis." },
-            { num: "03", title: "Plafonnement des Indemnités", desc: "Aucun représentant Force Commune ne percevra plus de 2 fois le salaire médian des travailleurs belges." },
-            { num: "04", title: "Transparence Totale des Comptes", desc: "Publication trimestrielle en ligne de l'intégralité des dépenses et recettes du mouvement au centime près." },
-            { num: "05", title: "Casier Judiciaire Vierge", desc: "Exclusion immédiate et inéligibilité à vie pour toute condamnation liée à la gestion publique ou à la fraude." },
-            { num: "06", title: "Financement 100% Citoyen", desc: "Refus de tout financement opaque, lobby industriel ou subvention conditionnée." },
-            { num: "07", title: "Commissions Citoyennes de Contrôle", desc: "Nos élus sont évalués annuellement par des jurys de citoyens tirés au sort parmi les adhérents." },
-            { num: "08", title: "Suppression des Privilèges de Pension", desc: "Cotisation et calcul de pension identiques au régime général des salariés et indépendants." },
-            { num: "09", title: "Discipline Républicaine & Respect", desc: "Condamnation sans concession de toute dérive violente ou communautariste." },
-            { num: "10", title: "Obligation de Résultat", desc: "Chaque proposition adoptée fait l'objet d'une clause d'évaluation chiffrée après 24 mois." }
+            { num: "01", title: "Le respect de ceux qui travaillent et entreprennent", desc: "Revalorisation du travail, soutien aux artisans, soignants, enseignants et créateurs de valeur." },
+            { num: "02", title: "La justice réelle", desc: "Aider ceux qui en ont besoin, ne pas subventionner l’abus." },
+            { num: "03", title: "L’ordre comme condition de la dignité", desc: "Garantir la sécurité publique et la sérénité dans chaque commune." },
+            { num: "04", title: "L’exemplarité de l’État et des élus", desc: "Transparence totale, sobriété des dépenses et gestion exemplaire." },
+            { num: "05", title: "L’exigence", desc: "Excellence à l'école, qualité dans les services publics et responsabilité dans l'engagement." },
+            { num: "06", title: "Le concret et les résultats", desc: "Juger les politiques uniquement à leurs effets réels sur le terrain." },
+            { num: "07", title: "Une écologie d’adhésion", desc: "Pas de punition ni d'écologie punitive, des alternatives attractives et soutenables." }
           ].map(c => `
             <div class="p-6 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-4">
               <span class="w-9 h-9 rounded-lg bg-navy-900 text-orange-400 font-bold font-display flex items-center justify-center flex-shrink-0 text-sm">
@@ -861,98 +708,7 @@ function renderPropositions() {
   `;
 }
 
-// 4. Actualités & Terrain View
-function renderActualites() {
-  return `
-    <div class="bg-navy-950 text-white py-14 relative overflow-hidden">
-      <div class="section-container relative z-10">
-        <div class="max-w-3xl space-y-4">
-          <span class="badge badge-orange">Presse & Terrain</span>
-          <h1 class="text-3xl sm:text-5xl font-extrabold font-display">
-            Actualités & Rencontres Citoyennes
-          </h1>
-          <p class="text-slate-300 text-base leading-relaxed">
-            Suivez les prises de position, les tribunes officielles et l'agenda des rencontres publiques de Force Commune à travers la Belgique.
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <section class="py-16 bg-slate-50">
-      <div class="section-container space-y-12">
-        
-        <!-- Articles Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          ${newsData.map(item => `
-            <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg transition-all">
-              <div class="h-48 bg-navy-950 relative">
-                <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover opacity-85">
-                <span class="absolute top-3 left-3 badge badge-dark">${item.category}</span>
-                <span class="absolute bottom-3 right-3 text-[10px] bg-navy-950/80 px-2 py-0.5 rounded text-slate-300">${item.readingTime}</span>
-              </div>
-              
-              <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                <div class="space-y-2.5">
-                  <div class="text-xs text-slate-400 font-semibold">${item.date} • ${item.author}</div>
-                  <h3 class="text-lg font-bold text-navy-950 font-display hover:text-orange-600 transition-colors">
-                    ${item.title}
-                  </h3>
-                  <div class="text-xs text-slate-600 leading-relaxed prose prose-sm">
-                    ${item.summary}
-                  </div>
-                </div>
-
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                  <span class="badge badge-orange text-[10px]">${item.badge}</span>
-                  <button class="text-xs font-bold text-navy-900 hover:text-orange-600 flex items-center gap-1" onclick="alert('Article archivé dans la lettre officielle.')">
-                    <span>Lire</span>
-                    <i data-lucide="chevron-right" class="w-4 h-4 text-orange-500"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          `).join('')}
-        </div>
-
-        <!-- Regional Tour Full Schedule Table -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-200 pb-4 gap-2">
-            <div>
-              <span class="badge badge-orange text-[10px] mb-1">Calendrier Officiel</span>
-              <h3 class="text-2xl font-bold text-navy-950 font-display">La Grande Tournée des Communes 2026</h3>
-            </div>
-            <span class="text-xs text-slate-500 font-medium">Inscription libre dans la limite des places disponibles</span>
-          </div>
-
-          <div class="divide-y divide-slate-100">
-            ${regionalTourEvents.map(ev => `
-              <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div class="space-y-1">
-                  <div class="flex items-center gap-2">
-                    <span class="font-bold text-navy-950 text-base">${ev.city}</span>
-                    <span class="text-xs font-semibold text-orange-600 bg-orange-50 px-2 py-0.5 rounded">${ev.topic}</span>
-                  </div>
-                  <div class="text-xs text-slate-500 flex items-center gap-2">
-                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span>${ev.venue}</span>
-                    <span>•</span>
-                    <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span>${ev.date} à ${ev.time}</span>
-                  </div>
-                </div>
-                <button class="btn-rsvp btn btn-primary text-xs py-1.5 px-4 self-start sm:self-auto" data-city="${ev.city}">
-                  <span>Réserver ma place</span>
-                  <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-                </button>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-
-      </div>
-    </section>
-  `;
-}
 
 // 5. Nous Rejoindre View (Interactive Membership & Donation Simulator)
 function renderNousRejoindre() {
@@ -1291,9 +1047,7 @@ function navigateTo(route) {
     case 'propositions':
       appRoot.innerHTML = renderPropositions();
       break;
-    case 'actualites':
-      appRoot.innerHTML = renderActualites();
-      break;
+
     case 'nous-rejoindre':
       appRoot.innerHTML = renderNousRejoindre();
       break;

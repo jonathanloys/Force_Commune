@@ -3,7 +3,7 @@ export const pillarsData = [
     id: "pouvoir-achat",
     number: "01",
     title: "Pouvoir d’Achat & Valeur du Travail",
-    subtitle: "Rendre au travail sa juste dignité et son pouvoir d'émancipation",
+    subtitle: "Rendre au travail sa juste dignité et son pouvoir d’émancipation",
     image: "/images/pillar-pouvoir-achat.jpg",
     badge: "Priorité Économique",
     summary: "En Belgique, l'écart entre le travail et l'inactivité s'est dangereusement réduit. Nous proposons un choc fiscal immédiat sur les salaires et les indépendants pour garantir au moins 350 € nets supplémentaires par mois à ceux qui font tourner le pays.",
@@ -72,31 +72,31 @@ export const pillarsData = [
   {
     id: "securite",
     number: "03",
-    title: "Sécurité & Tranquillité Publique",
-    subtitle: "Rétablir l'autorité républicaine et la quiétude dans nos quartiers",
+    title: "Ordre & Protection des Citoyens",
+    subtitle: "Retrouver la tranquillité dans les rues, les transports et les quartiers",
     image: "/images/pillar-securite.jpg",
-    badge: "Autorité & Justice",
-    summary: "La première des libertés est la sécurité. Force Commune réaffirme la primauté de la loi, le soutien inconditionnel à nos policiers et magistrats, et la fin de l'impunité pour les récidivistes qui pourrissent le quotidien.",
+    badge: "Sécurité du Quotidien",
+    summary: "La sécurité n’est pas une option, c’est la condition minimale d’une vie digne. Nous instaurons des peines planchers en cas de récidive pour les délits de voie publique et redonnons aux forces de l’ordre les moyens et le soutien politique nécessaires pour agir réellement.",
     highlights: [
       "Recrutement de 3 000 policiers de terrain supplémentaires et réarmement matériel",
-      "Exécution effective des peines dès le premier mois de prison ferme",
+      "Peines planchers automatiques en cas de récidive pour les délits de voie publique",
       "Création de centres éducatifs fermés pour les mineurs délinquants récidivistes",
       "Sécurisation renforcée 24/7 des gares, métros et réseaux de transport en commun"
     ],
     deepContent: `
       <h4>Le droit fondamental à la quiétude</h4>
-      <p>Dans nos gares, nos centres-villes et nos quartiers périurbains, le sentiment d'abandon grandit. Les commerçants et les familles sont les premières victimes d'une justice lente et encombrée.</p>
+      <p>Dans nos gares, nos centres-villes et nos quartiers, le sentiment d'insécurité grandit. La sécurité n’est pas une option, c’est la condition minimale d’une vie digne. Les honnêtes citoyens et les travailleurs méritent une protection absolue.</p>
       
       <h4>Nos 3 mesures d'urgence</h4>
       <div class="modal-measures-list">
         <div class="modal-measure-item">
-          <strong>1. Justice rapide & Tolérance zéro</strong> : Comparution immédiate effective pour les délits flagrants et fin du classement sans suite systématique pour les agressions du quotidien.
+          <strong>1. Peines planchers & Fin du sentiment d'impunité</strong> : Application stricte de peines incompressibles pour les violences urbaines et la récidive.
         </div>
         <div class="modal-measure-item">
-          <strong>2. Police de proximité respectée</strong> : Sanctions pénales alourdies et incompressibles pour tout outrage ou agression contre les policiers, pompiers et soignants.
+          <strong>2. Police de proximité respectée et équipée</strong> : Sanctions pénales maximales pour tout outrage ou agression contre les policiers, pompiers et soignants.
         </div>
         <div class="modal-measure-item">
-          <strong>3. Plan national contre les trafics de drogue</strong> : Opérations coups de poing coordonnées dans les ports et nœuds logistiques avec saisie immédiate des avoirs criminels.
+          <strong>3. Présence renforcée dans les transports</strong> : Brigades permanentes dans les gares et réseaux de transport public.
         </div>
       </div>
     `
@@ -104,31 +104,31 @@ export const pillarsData = [
   {
     id: "education",
     number: "04",
-    title: "Éducation Exigeante & Mérite",
-    subtitle: "L'école de l'excellence, de la discipline et de la promotion sociale",
+    title: "Éducation d’Excellence",
+    subtitle: "Former des citoyens capables, exigeants et préparés au monde de demain",
     image: "/images/pillar-education.jpg",
-    badge: "Avenir & Savoir",
-    summary: "L'ascenseur social passe par le savoir et l'effort. Nous voulons restaurer l'autorité des enseignants, recentrer l'école sur les savoirs fondamentaux et revaloriser massivement les filières professionnelles et d'apprentissage.",
+    badge: "Avenir & Exigence",
+    summary: "L’école wallonne a trop longtemps accepté le nivellement par le bas. Nous imposons le retour aux fondamentaux, une évaluation nationale transparente des résultats et une formation continue obligatoire des enseignants, soutenue par les outils numériques et l’intelligence artificielle.",
     highlights: [
-      "Recentrage prioritaire sur le français, les mathématiques et la logique scientifique",
-      "Revalorisation salariale et statutaire des enseignants en début et milieu de carrière",
-      "Revalorisation prestigieuse de l'enseignement technique, manuel et de l'artisanat",
-      "Rétablissement des notes claires, des examens nationaux et de la discipline en classe"
+      "Recentrage prioritaire sur le français, les mathématiques et la pensée critique",
+      "Évaluations nationales transparentes des acquis et résultats scolaires",
+      "Formation continue obligatoire des enseignants avec appui numérique et IA",
+      "Revalorisation prestigieuse de l'enseignement technique, pratique et de l'artisanat"
     ],
     deepContent: `
-      <h4>Refonder l'école de la République</h4>
-      <p>Les réformes pédagogistes successives ont nivelé les exigences par le bas et épuisé les enseignants belges. L'école doit redevenir le sanctuaire du savoir où chacun progresse grâce à son mérite et son travail.</p>
+      <h4>Refonder l'exigence éducative</h4>
+      <p>L’ascenseur social passe par le savoir, l'effort et la transmission. Nous refusons le nivellement par le bas et voulons redonner à nos écoles les standards d'excellence que méritent nos enfants.</p>
       
       <h4>Nos 3 mesures d'urgence</h4>
       <div class="modal-measures-list">
         <div class="modal-measure-item">
-          <strong>1. Maîtrise des fondamentaux dès 6 ans</strong> : 70% du temps en primaire consacré à la lecture fluide, l'écriture sans faute et le calcul mental.
+          <strong>1. Maîtrise des fondamentaux dès le primaire</strong> : Accent absolu sur la lecture, l'écriture sans faute, le calcul mental et les sciences.
         </div>
         <div class="modal-measure-item">
-          <strong>2. Pacte de confiance avec les professeurs</strong> : Allègement radical de la paperasse administrative pour permettre aux enseignants de se concentrer sur la transmission.
+          <strong>2. Soutien technologique & IA aux enseignants</strong> : Outils d'aide à la correction, suivi personnalisé des élèves et allègement des charges administratives.
         </div>
         <div class="modal-measure-item">
-          <strong>3. Filières d'excellence technique</strong> : Investissements massifs dans les ateliers scolaires et partenariat direct avec les entreprises locales créatrices d'emplois.
+          <strong>3. Filières techniques et manuelles d'élite</strong> : Investissements massifs dans les équipements scolaires en lien avec le tissu économique local.
         </div>
       </div>
     `
@@ -136,31 +136,63 @@ export const pillarsData = [
   {
     id: "ecologie",
     number: "05",
-    title: "Écologie d’Adhésion & Bon Sens",
-    subtitle: "Une transition écologique concrète, souveraine et non punitive",
+    title: "Transition qui donne envie",
+    subtitle: "Rendre les choix écologiques plus simples, plus avantageux et plus attractifs",
     image: "/images/pillar-ecologie.jpg",
-    badge: "Souveraineté & Climat",
-    summary: "L'écologie ne doit pas être une machine à punir les ménages et les travailleurs qui dépendent de leur véhicule ou de leur chaudière. Nous défendons une écologie technologique, basée sur l'énergie décarbonée stable et des transports fiables.",
+    badge: "Écologie d’Adhésion",
+    summary: "Nous refusons une écologie punitive qui pèse d’abord sur ceux qui travaillent. Nous misons sur des alternatives concrètes et avantageuses : transports en commun gratuits pour les travailleurs, simplification des démarches et soutien prioritaire aux solutions qui améliorent à la fois le pouvoir d’achat et l’environnement.",
     highlights: [
-      "Prolongation sans ambiguïté du parc nucléaire belge et relance de la R&D sur les SMR",
-      "Grand plan de modernisation et ponctualité de la SNCB et des réseaux de tramways",
-      "Primes directes et sans avance de trésorerie pour l'isolation des logements des ménages modestes",
-      "Soutien aux agriculteurs et producteurs locaux contre les normes européennes absurdes"
+      "Transports en commun gratuits pour les travailleurs et demandeurs d'emploi",
+      "Primes directes simples et immédiates pour la rénovation thermique sans avance de frais",
+      "Soutien aux circuits courts, producteurs locaux et filières durables belges",
+      "Développement d'une énergie souveraine, propre et bon marché (prolongation nucléaire & SMR)"
     ],
     deepContent: `
-      <h4>Pour une écologie qui rassemble</h4>
-      <p>Les taxes carbone punitives et les zones de basses émissions mal pensées pénalisent ceux qui n'ont pas les moyens de changer immédiatement de véhicule. Nous refusons l'écologie de salon.</p>
+      <h4>Une écologie d'adhésion populaire</h4>
+      <p>Pour réussir la transition environnementale, celle-ci doit être vécue comme une opportunité de progrès et de pouvoir d'achat, jamais comme une punition fiscale contre les classes moyennes et populaires.</p>
       
       <h4>Nos 3 mesures d'urgence</h4>
       <div class="modal-measures-list">
         <div class="modal-measure-item">
-          <strong>1. Souveraineté énergétique décarbonée</strong> : Maintien et modernisation des réacteurs nucléaires pour garantir une électricité bon marché et propre à nos foyers et industries.
+          <strong>1. Gratuité des transports pour les actifs</strong> : Rendre le train et le bus plus attractifs et fiables pour les trajets domicile-travail.
         </div>
         <div class="modal-measure-item">
-          <strong>2. Transports ferroviaires et périurbains</strong> : Rénovation des lignes secondaires, cadencement renforcé le matin et le soir, et sécurité totale à bord.
+          <strong>2. Choc d'isolation sans tracasserie</strong> : Prise en charge directe des travaux d'efficacité énergétique des logements modestes.
         </div>
         <div class="modal-measure-item">
-          <strong>3. Rénovation thermique accessible</strong> : Guichet unique pour les artisans du bâtiment et aides directes déduites sur facture pour les propriétaires et locataires.
+          <strong>3. Énergie propre et accessible</strong> : Garantir une électricité décarbonée abordable pour protéger la compétitivité et le budget des ménages.
+        </div>
+      </div>
+    `
+  },
+  {
+    id: "sante-retraites",
+    number: "06",
+    title: "Santé & Retraites Dignes",
+    subtitle: "Protéger concrètement ceux qui ont travaillé et ceux qui ont besoin de soins",
+    image: "/images/pillar-sante.jpg",
+    badge: "Droits Sociaux",
+    summary: "La santé et les retraites ne sont pas des variables d’ajustement budgétaire. Force Commune garantit l’accès à des soins de qualité pour tous et des pensions dignes pour ceux qui ont cotisé toute leur vie. Nous refusons les économies qui frappent d’abord les malades et les pensionnés, tout en luttant fermement contre les abus qui menacent la pérennité du système.",
+    highlights: [
+      "Garantie d'une pension minimale décente pour toute carrière complète",
+      "Lutte contre les déserts médicaux et revalorisation du personnel soignant",
+      "Remboursement garanti des soins essentiels et réduction des délais d'attente",
+      "Contrôle strict et lutte contre les fraudes pour pérenniser notre sécurité sociale"
+    ],
+    deepContent: `
+      <h4>La dignité de nos aînés et de nos soignants</h4>
+      <p>Un pays qui abandonne ses malades ou précarise ses retraités après une vie de travail a perdu sa boussole morale. La solidarité nationale doit être protégée et sanctuarisée.</p>
+      
+      <h4>Nos 3 mesures d'urgence</h4>
+      <div class="modal-measures-list">
+        <div class="modal-measure-item">
+          <strong>1. Revalorisation des carrières complètes</strong> : Une retraite proportionnelle aux années d'efforts garantissant un niveau de vie digne sans décrochage.
+        </div>
+        <div class="modal-measure-item">
+          <strong>2. Plan d'urgence pour l'hôpital et les soins de proximité</strong> : Augmentation des effectifs infirmiers et soutien aux maisons médicales de garde.
+        </div>
+        <div class="modal-measure-item">
+          <strong>3. Préservation durable du modèle social</strong> : Traque des abus et des gaspillages administratifs pour concentrer 100% des ressources sur les patients et les bénéficiaires légitimes.
         </div>
       </div>
     `
